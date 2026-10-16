@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 # Load the trained model
 try:
-    with open('model.pkl', 'rb') as f:
+    with open('linear_2.pkl', 'rb') as f:
         model = pickle.load(f)
 except Exception as e:
     print(f"Error loading model: {e}")
